@@ -1,0 +1,292 @@
+:root {
+    --black: #090000;
+    --yellow: #E4B363;
+    --white: #E8E9EB;
+    --red: #CF0036;
+    --gray: #E0DFD5;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.15;
+    overflow-x: hidden;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: -moz-hidden-unscrollable;
+    overflow: hidden;
+
+    /*theme colors*/
+    --background-color: var(--black);
+    --font-color: var(--white);
+    --footer-background: var(--red);
+    --link-hover: var(--yellow);
+    --accent-bar-color: var(--red);
+
+}
+
+a {
+    color: var(--font-color);
+    transition: transform .1s;
+    display: inline-block;
+}
+
+a:hover, a:focus {
+    color: var(--link-hover);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.popup-button {
+    color: var(--font-color);
+    transition: transform .1s;
+    
+    padding: 0;
+    margin: 0;
+}
+
+.popup-button:hover, .popup-button:focus {
+    color: var(--link-hover);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    cursor: default;
+}
+
+.right-text {
+    text-align: right;
+}
+
+
+.modal-address-info {
+    background-color: var(--gray);
+    color: var(--black);
+    min-height: 20%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    margin: 0;
+    z-index: 1;
+    display: none;
+}
+
+.question {
+    background: var(--black);
+    color: var(--white);
+    font: x-large;
+    font-weight: bold;
+    padding: 3px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 20%;
+    text-align: center;
+}
+
+.question:hover, .question:focus {
+    background-color: var(--yellow);
+    color: var(--red);
+}
+
+.pop-up-content {
+    padding: 2em;
+    font-size: large;
+    display: none;
+}
+
+.pop-up-link {
+    color: var(--red);
+}
+
+.pop-up-link:hover, .pop-up-link:focus {
+    color: var(--link-hover);
+        -ms-transform: none;
+        -webkit-transform: none;
+        transform: none;
+        font-weight: bold;
+}
+
+.close-button {
+    position: absolute;
+    margin: 0;
+    top: 0%;
+    right: 0%;
+    background-color: var(--red);
+    color: var(--white);
+    font-weight: bold;
+    font-size: xx-large;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: var(--black);
+    background-color: (--white);
+
+        -ms-transform: none;
+        -webkit-transform: none;
+        transform: none;
+        font-weight: bold;
+}
+
+#content-container{
+    max-height: 70%;
+    margin: 0;
+    align-self: flex-start;
+    justify-content: flex-start;
+    margin-top: 1em;
+}
+
+#law-types {
+    justify-content: flex-start;
+}
+
+#footer-container{
+    background-color: var(--footer-background);    
+}
+
+#address-block-container {
+    flex-direction: row;
+    font-size: x-small;
+}
+
+.address {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+.name {
+    text-decoration: none;
+    font-size: xx-large;
+}
+
+.decorative-bar{
+    background-color: var(--accent-bar-color);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    max-width: 60%;
+    max-height: 8%;
+    display: flex;
+    flex-direction: row;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+#copyright {
+    font-size: xx-small;
+    align-self: flex-start;
+    margin: 1px;
+    cursor: default;
+    color: var(--gray);
+}
+
+.lawyer-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#slogan {
+    cursor: default;
+    color: var(--gray);
+}
+
+.icon {
+    max-height: 100%;
+    width: auto;
+}
+
+.law-type-text {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+
+/*google suggests starting with mobile design and "enhancing" for larger screens, so I will try that. The "only" keyword keeps ancient browsers from attempting to apply everything.*/
+
+@media only screen and (min-width: 601px)
+{
+    #monticello-address {
+        padding-left: 10%;
+    }
+
+    #warren-address {
+        padding-right: 10%;
+    }
+
+    #footer-container {
+        max-width: 50%;
+    }
+
+    .decorative-bar {
+        max-width: 30%;
+        margin-bottom: 3em;
+    }
+
+    .left-text {
+        padding-left: 15%;
+    }
+
+    .right-text {
+        padding-right: 15%;
+    }
+
+    .left-icon {
+        padding-right: 15%;
+    }
+
+    .right-icon {
+        padding-left: 15%;
+    }
+
+    .spacer{
+        max-width: 20%;
+    }
+
+    .pop-up-content {
+        max-width: 50%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    body{
+        padding: 0;
+    }  
+}
