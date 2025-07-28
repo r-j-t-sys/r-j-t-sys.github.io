@@ -4,12 +4,10 @@ const theScreen = window;
 
 var monticelloButton = document.getElementById("monticello-button");
 var monticelloAddressInfo = document.getElementById("monticello-content");
-
 var warrenAddressInfo = document.getElementById("warren-content");
 var warrenButton = document.getElementById("warren-button");
 
 var modalPopupWindow = document.getElementById("modal-address-info");
-
 var closePopup = document.getElementById("close-button");
 
 var houseIcon = document.getElementById("house-icon");
