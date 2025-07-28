@@ -21,23 +21,84 @@ var probateBar = document.getElementById("will");
 var generalIcon = document.getElementById("general-law-icon");
 var generalBar = document.getElementById("general-law");
 
+var houseBar = document.getElementById("real-estate");
+var houseContent = document.getElementById("real-estate-content");
+var estateBar = document.getElementById("family");
+var estateContent = document.getElementById("estate-planning-content");
+var probateBar = document.getElementById("will"); 
+var probateContent = document.getElementById("probate-content");
+var generalBar = document.getElementById("general-law");
+var generalContent = document.getElementById("general-content");
+
 
 monticelloButton.onclick = function() {
     modalPopupWindow.style.display = "block";
     monticelloAddressInfo.style.display = "block";
     warrenAddressInfo.style.display = "none";
+    houseContent.style.display = "none";
+    estateContent.style.display = "none";
+    probateContent.style.display = "none";
+    generalContent.style.display = "none";
 }
 
 closePopup.onclick = function() {
     modalPopupWindow.style.display = "none";
     monticelloAddressInfo.style.display = "none";
     warrenAddressInfo.style.display = "none";
+    houseContent.style.display = "none";
+    estateContent.style.display = "none";
+    probateContent.style.display = "none";
+    generalContent.style.display = "none";
 }
 
 warrenButton.onclick = function() {
     modalPopupWindow.style.display = "block";
     monticelloAddressInfo.style.display = "none";
     warrenAddressInfo.style.display = "block";
+    houseContent.style.display = "none";
+    estateContent.style.display = "none";
+    probateContent.style.display = "none";
+    generalContent.style.display = "none";
+}
+
+houseBar.onclick = function() {
+    modalPopupWindow.style.display = "block";
+    monticelloAddressInfo.style.display = "none";
+    warrenAddressInfo.style.display = "none";
+    houseContent.style.display = "block";
+    estateContent.style.display = "none";
+    probateContent.style.display = "none";
+    generalContent.style.display = "none";
+}
+
+estateBar.onclick = function () {
+    modalPopupWindow.style.display = "block";
+    monticelloAddressInfo.style.display = "none";
+    warrenAddressInfo.style.display = "none";
+    houseContent.style.display = "none";
+    estateContent.style.display = "block";
+    probateContent.style.display = "none";
+    generalContent.style.display = "none";
+}
+
+probateBar.onclick = function () {
+    modalPopupWindow.style.display = "block";
+    monticelloAddressInfo.style.display = "none";
+    warrenAddressInfo.style.display = "none";
+    houseContent.style.display = "none";
+    estateContent.style.display = "none";
+    probateContent.style.display = "block";
+    generalContent.style.display = "none";
+}
+
+generalBar.onclick = function () {
+    modalPopupWindow.style.display = "block";
+    monticelloAddressInfo.style.display = "none";
+    warrenAddressInfo.style.display = "none";
+    houseContent.style.display = "none";
+    estateContent.style.display = "none";
+    probateContent.style.display = "none";
+    generalContent.style.display = "block";
 }
 
 
